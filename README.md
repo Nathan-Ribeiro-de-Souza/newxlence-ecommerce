@@ -1,73 +1,139 @@
-# React + TypeScript + Vite
+# NewXLence E-commerce
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+NewXLence is a front-end e-commerce project built with React and TypeScript, created as part of my learning journey in Front-end development.
 
-Currently, two official plugins are available:
+The project simulates an online T-shirt store with product filtering, product details, cart management, localStorage persistence, WhatsApp checkout, and dark/light mode.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This is not a real store. It is a portfolio and learning project focused on practicing React, TypeScript, component structure, state management, routing, UI organization, and front-end logic.
 
-## React Compiler
+## View Project
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+👉 [Live Demo](https://newxlence-ecommerce.vercel.app/)
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* Product catalog
+* Product search
+* Filter products by category
+* Filter products by gender
+* Product details page
+* Product image gallery
+* Product variations by color, print and size
+* Add products to cart
+* Increase and decrease product quantity
+* Remove products from cart
+* Restore deleted products from cart history
+* Cart total calculation
+* Cart persistence with localStorage
+* WhatsApp checkout
+* Dark mode and light mode
+* Responsive layout
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Technologies
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+* React
+* TypeScript
+* React Router
+* CSS
+* localStorage
+* useState
+* useEffect
+* Vite
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## What I Learned
+
+While building this project, I practiced important Front-end concepts such as:
+
+* Creating reusable components
+* Working with props and TypeScript types
+* Managing state between pages and components
+* Filtering products using multiple conditions
+* Handling product variations
+* Building cart logic
+* Saving data with localStorage
+* Creating a responsive layout
+* Organizing a React project structure
+* Improving UI with dark and light themes
+
+## Future Improvements
+
+In the future, I plan to improve this project by adding Back-end features, such as:
+
+* User authentication
+* Product database
+* Real checkout flow
+* Admin product management
+* Order history
+* API integration
+
+My goal is to keep improving this project as I learn Back-end development and turn it into a more complete Full Stack application.
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Nathan-Ribeiro-de-Souza/newxlence-ecommerce.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Navigate to the project folder:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+cd newxlence-ecommerce
 ```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+## Project Structure
+
+```text
+src/
+├── components/
+│   ├── About.tsx
+│   ├── CartHistory.tsx
+│   ├── ProductCard.tsx
+│   ├── ProductGallery.tsx
+│   ├── Search.tsx
+│   ├── SelectCategory.tsx
+│   ├── SelectedGender.tsx
+│   └── ToggleMode.tsx
+├── data/
+│   └── products.ts
+├── pages/
+│   ├── Cart.tsx
+│   ├── Contact.tsx
+│   ├── Home.tsx
+│   ├── Navbar.tsx
+│   ├── NotFound.tsx
+│   ├── ProductDetails.tsx
+│   └── Products.tsx
+├── types/
+│   ├── CartType.ts
+│   └── ProductType.ts
+├── App.tsx
+├── App.css
+├── index.css
+└── main.tsx
+```
+
+## About the Project
+
+Before I started programming, I used to think about selling clothes online and maybe having my own store someday. When I started learning Front-end development, I decided to turn that old idea into a real project.
+
+The brand name I imagined at the time was NewXLence. This project combines creativity, personal style, and my skills as a developer.
+
+The shirt arts were created with help from my wife at the time, and I added the images inside the public/images folder. Since this project was built mainly for learning purposes, the prints were chosen randomly to help me build a more realistic e-commerce structure.
+
+## Author
+
+Nathan Ribeiro de Souza
