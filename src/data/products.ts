@@ -3,7 +3,7 @@ import type { ProductType } from '../types/ProductType'
 export const products: ProductType[] =([
     {
       id: 1,
-      name: 'Gojo Black and White T-shirt',
+      name: 'Gojo Black T-shirt',
       category: 'Animes',
       sizes: ['PP','P', 'M', 'G', 'GG'],
       description: 'Anime T-shirt',
@@ -61,7 +61,7 @@ export const products: ProductType[] =([
   },
   {
       id: 3,
-      name: 'Goku Black and White T-shirt',
+      name: 'Goku and Vegeta Black and White T-shirt',
       category: 'Animes',
       sizes: ['PP','P', 'M', 'G', 'GG'],
       description: 'Anime T-shirt',
@@ -96,7 +96,7 @@ export const products: ProductType[] =([
   },
   {
       id: 4,
-      name: 'Mikey Black and White T-shirt',
+      name: 'Mikey Black T-shirt',
       category: 'Animes',
       sizes: ['PP','P', 'M', 'G', 'GG'],
       description: 'Anime T-shirt',
@@ -193,7 +193,7 @@ export const products: ProductType[] =([
         {
         print: 'Front',
         price: 100,
-        images: ['/images/mikey-2.1.png', '/images/mikey-2.2' ],
+        images: ['/images/mikey-2.1.jpg', '/images/mikey-2.2.jpg' ],
         color: 'Black'
       }],
     },
